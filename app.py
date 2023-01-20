@@ -2,7 +2,7 @@
 
 from aws_cdk import App,Environment
 
-from pipelines_webinar.pipeline_stack import PipelineStack
+from api_eventbridge_lambda.pipeline_stack import PipelineStack
 
 PIPELINE_ACCOUNT = '782160816199'
 
