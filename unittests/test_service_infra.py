@@ -16,4 +16,4 @@ def test_lambda_handler():
   assert len(functions) == 3
   assert functions[0]['Properties']['Handler'] == 'event_producer_lambda.lambda_handler'
   assert functions[1]['Properties']['Handler'] == 'event_consumer_lambda.lambda_handler'
-  assert functions[3]['Properties']['Handler'] == 'event_consumer_lambda.lambda_handler'
+  assert functions[2]['Properties']['Handler'] == 'event_consumer_lambda.lambda_handler'
