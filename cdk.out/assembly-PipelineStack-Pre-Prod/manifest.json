@@ -1,0 +1,233 @@
+{
+  "version": "22.0.0",
+  "artifacts": {
+    "PipelineStackPreProdWebService366DDB3C.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "PipelineStackPreProdWebService366DDB3C.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "PipelineStackPreProdWebService366DDB3C": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://782160816199/us-east-2",
+      "properties": {
+        "templateFile": "PipelineStackPreProdWebService366DDB3C.template.json",
+        "validateOnSynth": true,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::782160816199:role/cdk-hnb659fds-deploy-role-782160816199-us-east-2",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::782160816199:role/cdk-hnb659fds-cfn-exec-role-782160816199-us-east-2",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-782160816199-us-east-2/f3264e1f6d9051d714580dd16557856003c31a4ca572a30f322a29abe6687b60.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "PipelineStackPreProdWebService366DDB3C.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::782160816199:role/cdk-hnb659fds-lookup-role-782160816199-us-east-2",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        },
+        "stackName": "Pre-Prod-WebService"
+      },
+      "dependencies": [
+        "PipelineStackPreProdWebService366DDB3C.assets"
+      ],
+      "metadata": {
+        "/PipelineStack/Pre-Prod/WebService/eventProducerLambda/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eventProducerLambdaServiceRoleD019EB99"
+          }
+        ],
+        "/PipelineStack/Pre-Prod/WebService/eventProducerLambda/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eventProducerLambdaServiceRoleDefaultPolicy73C54CA7"
+          }
+        ],
+        "/PipelineStack/Pre-Prod/WebService/eventProducerLambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eventProducerLambda100D549C"
+          }
+        ],
+        "/PipelineStack/Pre-Prod/WebService/eventConsumer1Lambda/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eventConsumer1LambdaServiceRoleC8CCBFC5"
+          }
+        ],
+        "/PipelineStack/Pre-Prod/WebService/eventConsumer1Lambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eventConsumer1Lambda4AF2292E"
+          }
+        ],
+        "/PipelineStack/Pre-Prod/WebService/eventConsumer1LambdaRule/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eventConsumer1LambdaRule288E5FF9"
+          }
+        ],
+        "/PipelineStack/Pre-Prod/WebService/eventConsumer1LambdaRule/AllowEventRulePipelineStackPreProdWebServiceeventConsumer1Lambda1E784F83": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eventConsumer1LambdaRuleAllowEventRulePipelineStackPreProdWebServiceeventConsumer1Lambda1E784F836CB805F9"
+          }
+        ],
+        "/PipelineStack/Pre-Prod/WebService/eventConsumer2Lambda/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eventConsumer2LambdaServiceRole6B878884"
+          }
+        ],
+        "/PipelineStack/Pre-Prod/WebService/eventConsumer2Lambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eventConsumer2Lambda1631C47A"
+          }
+        ],
+        "/PipelineStack/Pre-Prod/WebService/eventConsumer2LambdaRule/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eventConsumer2LambdaRule54312CB1"
+          }
+        ],
+        "/PipelineStack/Pre-Prod/WebService/eventConsumer2LambdaRule/AllowEventRulePipelineStackPreProdWebServiceeventConsumer2LambdaF19A1947": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eventConsumer2LambdaRuleAllowEventRulePipelineStackPreProdWebServiceeventConsumer2LambdaF19A1947B6118754"
+          }
+        ],
+        "/PipelineStack/Pre-Prod/WebService/test-ngest-bucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testngestbucketD7155299"
+          }
+        ],
+        "/PipelineStack/Pre-Prod/WebService/myRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myRoleE60D68E8"
+          }
+        ],
+        "/PipelineStack/Pre-Prod/WebService/s3_attr/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "s3attrCCE68BF6"
+          }
+        ],
+        "/PipelineStack/Pre-Prod/WebService/consumer3-firehose": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "consumer3firehose"
+          }
+        ],
+        "/PipelineStack/Pre-Prod/WebService/consumer3-firehose/EventsRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "consumer3firehoseEventsRoleECB13871"
+          }
+        ],
+        "/PipelineStack/Pre-Prod/WebService/consumer3-firehose/EventsRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "consumer3firehoseEventsRoleDefaultPolicyE23D0802"
+          }
+        ],
+        "/PipelineStack/Pre-Prod/WebService/eventConsumer3KinesisRule/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eventConsumer3KinesisRuleB8D02F6F"
+          }
+        ],
+        "/PipelineStack/Pre-Prod/WebService/SampleAPI-EventBridge-Multi-Consumer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SampleAPIEventBridgeMultiConsumer52DC1403"
+          }
+        ],
+        "/PipelineStack/Pre-Prod/WebService/SampleAPI-EventBridge-Multi-Consumer/CloudWatchRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SampleAPIEventBridgeMultiConsumerCloudWatchRoleE43B891E"
+          }
+        ],
+        "/PipelineStack/Pre-Prod/WebService/SampleAPI-EventBridge-Multi-Consumer/Account": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SampleAPIEventBridgeMultiConsumerAccount468DDDC0"
+          }
+        ],
+        "/PipelineStack/Pre-Prod/WebService/SampleAPI-EventBridge-Multi-Consumer/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SampleAPIEventBridgeMultiConsumerDeploymentD1A02186c745b382147a4df715a2e9d3689ebf24"
+          }
+        ],
+        "/PipelineStack/Pre-Prod/WebService/SampleAPI-EventBridge-Multi-Consumer/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SampleAPIEventBridgeMultiConsumerDeploymentStageprodDE087A58"
+          }
+        ],
+        "/PipelineStack/Pre-Prod/WebService/SampleAPI-EventBridge-Multi-Consumer/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SampleAPIEventBridgeMultiConsumerEndpoint93C2DFF8"
+          }
+        ],
+        "/PipelineStack/Pre-Prod/WebService/SampleAPI-EventBridge-Multi-Consumer/Default/items/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SampleAPIEventBridgeMultiConsumeritems997C90A7"
+          }
+        ],
+        "/PipelineStack/Pre-Prod/WebService/SampleAPI-EventBridge-Multi-Consumer/Default/items/POST/ApiPermission.PipelineStackPreProdWebServiceSampleAPIEventBridgeMultiConsumerC33D7EBE.POST..items": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SampleAPIEventBridgeMultiConsumeritemsPOSTApiPermissionPipelineStackPreProdWebServiceSampleAPIEventBridgeMultiConsumerC33D7EBEPOSTitemsC6863A94"
+          }
+        ],
+        "/PipelineStack/Pre-Prod/WebService/SampleAPI-EventBridge-Multi-Consumer/Default/items/POST/ApiPermission.Test.PipelineStackPreProdWebServiceSampleAPIEventBridgeMultiConsumerC33D7EBE.POST..items": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SampleAPIEventBridgeMultiConsumeritemsPOSTApiPermissionTestPipelineStackPreProdWebServiceSampleAPIEventBridgeMultiConsumerC33D7EBEPOSTitemsFE9C516E"
+          }
+        ],
+        "/PipelineStack/Pre-Prod/WebService/SampleAPI-EventBridge-Multi-Consumer/Default/items/POST/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SampleAPIEventBridgeMultiConsumeritemsPOSTD2DFDA56"
+          }
+        ],
+        "/PipelineStack/Pre-Prod/WebService/Url": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Url"
+          }
+        ],
+        "/PipelineStack/Pre-Prod/WebService/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/PipelineStack/Pre-Prod/WebService/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/PipelineStack/Pre-Prod/WebService/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "PipelineStack/Pre-Prod/WebService"
+    }
+  }
+}

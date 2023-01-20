@@ -1,12 +1,12 @@
 from aws_cdk import App
-from pipelines_webinar.pipelines_webinar_stack import PipelinesWebinarStack
+from api_eventbridge_lambda.api_eventbridge_lambda import ApiEventBridgeLambdaStack
 
 def test_lambda_handler():
   # GIVEN
   app = App()
 
   # WHEN
-  PipelinesWebinarStack(app, 'Stack')
+  ApiEventBridgeLambdaStack(app, 'Stack')
 
   # THEN
   template = app.synth().get_stack_by_name('Stack').template
