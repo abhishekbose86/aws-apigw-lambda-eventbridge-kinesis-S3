@@ -14,7 +14,7 @@ class PipelineStack(Stack):
   def __init__(self, scope: Construct, id: str, **kwargs):
     super().__init__(scope, id, **kwargs)
 
-    source = pipelines.CodePipelineSource.git_hub("abhishekbose86/CDK-aws-code-pipeline", "main",
+    source = pipelines.CodePipelineSource.git_hub("abhishekbose86/aws-apigw-lambda-eventbridge-kinesis-S3", "main",
         authentication=SecretValue.secrets_manager("github-token"))
     pipeline = pipelines.CodePipeline(self, 'Pipeline',
       pipeline_name='TestPipeline',
